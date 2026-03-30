@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/CHANDRU M D_PROITBRIDGE/SCRIPTS/Deep_Learning/Day_15_YOLO_Customization/Train/images # train images (relative to 'path') 118287 images
+val: /content/drive/MyDrive/CHANDRU M D_PROITBRIDGE/SCRIPTS/Deep_Learning/Day_15_YOLO_Customization/val/images # val images (relative to 'path') 5000 images
+
+names:
+  0: Mask
+  1: NoMask
