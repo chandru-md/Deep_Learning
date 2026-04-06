@@ -30,3 +30,9 @@ print(f"Accuracy: {acc:.4f}")
 
 # Improve model
 layers.Dropout(0.3)  # prevent overfitting
+
+#Add call backs
+from tensorflow.keras.callbacks import EarlyStopping
+
+early_stop = EarlyStopping(patience=3)
+model.fit(X, y, epochs=50, callbacks=[early_stop])
