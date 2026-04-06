@@ -27,3 +27,6 @@ model.fit(X, y, epochs=10, batch_size=32)
 # 5. Evaluate
 loss, acc = model.evaluate(X, y)
 print(f"Accuracy: {acc:.4f}")
+
+# Improve model
+layers.Dropout(0.3)  # prevent overfitting
