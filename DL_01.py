@@ -36,3 +36,13 @@ from tensorflow.keras.callbacks import EarlyStopping
 
 early_stop = EarlyStopping(patience=3)
 model.fit(X, y, epochs=50, callbacks=[early_stop])
+
+#CNN Example - Image Model
+model = keras.Sequential([
+    layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
+    layers.MaxPooling2D(2,2),
+    layers.Conv2D(64, (3,3), activation='relu'),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
